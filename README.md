@@ -1,14 +1,12 @@
-# Mashery-WOW
+# blizzard-data
 
-Pull data from WOW's API
+Pull data from WOW's API using oAuth
 
-# Code
+# Files
 
-```
-php -r '
-$mashery_key = ""; // Mashery key goes here
-include("Mashery_WOW.php");
-$c=new Mashery_WOW($mashery_key);
-print_r($c->getCharacterFeed("emerald-dream","hawwtkunnk"));
-'
-```
+bnet_oauth.php - class that does the work
+
+last_updated_toons_db.php - script that uses the class that does the work
+
+database-structure.sql - SQL Tables to store data that's used from the script that uses the class
+
